@@ -13,13 +13,17 @@ namespace League_of_Hate.Modules
 
         public override async Task<bool> Execute()
         {
+            if (!Bootstrap.IsAlreadyOpen)
+            {
+                Process.Start("https://pierrehenrique.github.io/League-of-Hate/");
+                Bootstrap.IsAlreadyOpen = true;
+            }
+
             Debug.Write("- Informe o ID do icone: ");
             var id = Console.ReadLine();
 
             if (int.TryParse(id, out int result))
             {
-                Process.Start();
-
                 var response = await Connection.Put("lol-summoner/v1/current-summoner/icon", new JData.SummonerIcon {ProfileIconId = result});
 
                 if (response != null)

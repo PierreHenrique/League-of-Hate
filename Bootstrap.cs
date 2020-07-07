@@ -9,6 +9,7 @@ namespace League_of_Hate
 {
     public class Bootstrap
     {
+        public static bool IsAlreadyOpen = false;
         public static Connection Connection;
         private static readonly List<Module> Modules = new List<Module>
         {
