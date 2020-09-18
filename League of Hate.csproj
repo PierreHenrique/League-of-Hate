@@ -61,6 +61,7 @@
     <Compile Include="JData\SummonerIcon.cs" />
     <Compile Include="Modules\CloseApplication.cs" />
     <Compile Include="Modules\Module.cs" />
+    <Compile Include="Modules\RainbowIcon.cs" />
     <Compile Include="Modules\SummonerIcon.cs" />
     <Compile Include="Modules\TeamBoost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,10 +70,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="favicon %281%29.ico" />
-    <Content Include="favicon.ico" />
     <Content Include="Icon.ico" />
-    <Content Include="icon_iVk_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,7 +15,8 @@ namespace League_of_Hate
         {
             new CloseApplication(),
             new SummonerIcon(),
-            new TeamBoost()
+            new TeamBoost(),
+            new RainbowIcon()
         };
 
         static async Task Main(string[] args)
